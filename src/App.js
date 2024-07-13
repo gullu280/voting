@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import {Routes, Route, BrowserRouter,} from 'react-router-dom';
+import './Tailwind.css';
+import Login from './componend/Login';
+import LogOut from './componend/LogOut';
+import Registration from './componend/Registration';
+
 
 function App() {
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // const login = () => {
+  //   setIsAuthenticated(true);
+  // };
+
+  // const logout = () => {
+  //   setIsAuthenticated(false);
+  // };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={ <Registration/>}/>
+    <Route path="/login" element={<Login  />}/>
+      <Route path="/logout/:name" element= { <LogOut  />}/>
+       
+      
+      </Routes>
+  </BrowserRouter>
   );
 }
 

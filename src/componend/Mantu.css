@@ -1,0 +1,33 @@
+@keyframes fire {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .fire-animation {
+    background: url("D:\react folder\voting\voting\public\th.jpg");
+    background-repeat: no-repeat;
+    animation: fire 15s linear infinite;
+    opacity: 0.5;
+  }
+  @keyframes nam {
+    0% {
+        box-shadow: 4px  red;
+    }
+    50% {
+        box-shadow:  4px 4px 12px green ;
+    }
+    100% {
+        box-shadow: 6px 6px 20px yellow  ;
+    }
+  }
+  .name:hover{
+    box-shadow: 2px 2px  red;
+    animation: nam 2s linear infinite;
+  }
