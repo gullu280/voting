@@ -79,9 +79,9 @@ function Login() {
            
         </div>
        
-        <button type="submit" className="w-full p-2 text-white bg-blue-500 rounded">login</button>
+        <button type="submit" className="w-full p-2 text-white bg-blue-500 rounded">login </button>
         <p className="mt-4">
-          does'nt  have an account? <Link to="/" className="text-blue-500">Register</Link>
+          does'nt  have an account? <Link to="/" className="text-blue-500">Register now</Link>
         </p>
      
       </form>
